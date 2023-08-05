@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Flex</title>
+
+  <style>
+      body {
+        margin: 20px;
+      }
+
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      h2 {
+        background-color: aqua;
+        border: 3px solid black;
+        text-align: center;
+        margin: 0;
+        /* flex: 1; */
+         /*fkex 1 é usado para deixar o container do mesmo tamanho  */
+      }
+
+      .grid {
+        display: grid;
+        gap: 20px;
+        margin-top:100px ;
+        grid-template-columns: repeat(auto-fit, 200px);
+        /* O auto-fit é para aqueles projetos que você não se importa tanto com a largura da coluna, mas quer que ela fique responsiva e ocupe a tela toda. */
+      }
+  </style>
+</head>
+<body>
+
+  <div class="flex">
+    <h2>Senhor dos Aneis</h2>
+    <h2>O Hobbit</h2>
+    <h2>Sin City</h2>
+    <h2>Mad Max</h2>
+    <h2>Vikings</h2>
+    <h2>The Last Kingdom</h2>
+  </div>
+
+  <div class="grid">
+    <h2>Senhor dos Aneis</h2>
+    <h2>O Hobbit</h2>
+    <h2>Sin City</h2>
+    <h2>Mad Max</h2>
+    <h2>Vikings</h2>
+    <h2>The Last Kingdom</h2>
+  </div>
+  
+  
+</body>
+</html>

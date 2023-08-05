@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    img {
+      max-width: 100%;
+      display: block;
+
+    }
+
+    /* div {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+      gap: 1rem;
+    } */
+
+    div {
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+
+    } 
+
+    h1 {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+
+    @media (max-width: 700px) {
+
+      div {
+
+        grid-template-columns: 1fr;
+        font-size: 1.5rem;
+        letter-spacing: 0.10rem;
+
+      }
+
+    }
+
+    @media (min-width:300px) and (max-width: 700px) {
+      p {
+        background: lightblue;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h1>Nossas Bicicletas</h1>
+    <img src="img/bicicleta.jpg" alt="">
+    <p class="max">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis aspernatur doloremque, a quos quod voluptatum pariatur id porro sapiente dolorum fugit perspiciatis, saepe cupiditate iusto!</p>
+  </div>
+
+
+
+</body>
+
+</html>

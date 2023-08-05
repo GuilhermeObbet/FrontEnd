@@ -4,7 +4,8 @@ body {
 }
 
 img {
-  max-width: 75%;
+  width: auto;
+  height: 15em;
   border-radius: 5px;
 }
 
@@ -13,9 +14,11 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-radius: 5px;
   margin-bottom: 20px;
+  
+ 
 }
 
-.a {
+.buttom {
   max-width: 50%;
   text-decoration: none;
   text-align: center;
@@ -27,7 +30,7 @@ p {
   letter-spacing: 2px;
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
-  transition: 0.3s;
+  
 }
 
 a {
@@ -35,7 +38,7 @@ a {
   color: black;
 }
 
-.a:hover {
+.buttom:hover {
   text-decoration: underline;
 }
 
@@ -47,4 +50,9 @@ a:hover {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.box {
+  text-align: center;
+
 }
