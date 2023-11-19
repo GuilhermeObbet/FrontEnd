@@ -1,8 +1,13 @@
+:root {
+  --cor-background:black;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   display: grid;
   background: lightcyan;
+  background-image: url(HTML/.fotobikcraft);
 }
 
 h1,
@@ -56,6 +61,8 @@ header {
   margin-top: 3rem;
 }
 
+
+
 @media (min-width: 300px) and (max-width: 850px) {
   .conteudo {
     grid-template-columns: 1fr;
@@ -66,7 +73,7 @@ header {
 
 
   .sub {
-    display: none;
+   justify-content: center;
   }
 
 

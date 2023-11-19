@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    label {
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <form action="./"></form>
+  <label for="Nome">Nome</label>
+  <!-- no for nome, se cria um id nome no input -->
+  <!-- label display block -->
+  <!-- aumetar a font size do input,1.2rem-->
+
+  <input type="text" id="nome" name="nomes">
+  <label for="senha">Senha</label>
+  <input type="password" id="senha" name="senha">
+
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="idade">Idade</label>
+  <input type="number" id="numer" name="Idade">
+
+  <label for="date">Saída do Hotel</label>
+  <input type="date" id="date" name="date">
+
+  <label for="termos">Termos e Condições</label>
+  <input type="checkbox" id="termos" name="termos">
+
+  <label for="parcelas"></label>
+<select name="parcelas" id="parcelas">
+  <option value="À Vista">À Vista de R$400,00</option>
+  <option value="2x">2x de R$200,00</option>
+  <option value="3x">3x de R$150,00</option>
+  <option value="4x">4x de R$125,00</option>
+</select>
+  
+  <button>Enviar</button>
+</body>
+</html>

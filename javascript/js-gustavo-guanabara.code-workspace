@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../Git/FrontEnd"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "FrontEnd"
+  }
+}

@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --sizefont-a: 1.1rem;
+  --header-bg-color: #a8d0a3;
+}
+
+body {
+}
+
+input {
+  margin-right: 2rem;
+  padding: 0.5rem 0.25rem;
+  background: #c7e2c4;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+input:hover {
+  padding-right: 3rem;
+  transition: 0.3s;
+}
+
+::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(251, 247, 247);
+  font-weight: bold;
+  font-size: var(--sizefont-a);
+  line-height: 1.125;
+  text-align: start;
+}
+
+.logo {
+  color: rgb(251, 247, 247);
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header-bg {
+  background: var(--header-bg-color);
+  max-width: 100%;
+}
+
+.container-menu {
+  display: flex;
+  gap: 20rem;
+  padding: 0.5rem;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+.menu a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(251, 247, 247);
+  padding: 0.25rem 0.5rem;
+  font-weight: 700;
+  font-size: var(--sizefont-a);
+  line-height: 1.125;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid white;
+  color: #ecf5eb;
+  transition: 0.1s;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ecf5eb;
+  
+}
+
+
+@media (max-width: 900px) {
+  .logo {
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+
+ 
+
+  input {
+    padding: 0.25rem 0.1rem;
+  }
+
+  ::placeholder {
+    font-size: 0.9rem;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  input {
+    display: none;
+    /* colocar uma lupa no JS */
+  }
+
+  .linkhome {
+    margin: 0 auto;
+  }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +10,98 @@
       margin: 0;
       padding: 0;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background: #f5f4f1;
     }
 
     header {
-      justify-content: space-between;
-      align-items: center;
-      display: flex;
-      max-width: 1000PX;
-      height: 10rem;
-      margin: 0 auto;
+      
+      background:#f2e7d2;
     }
-    
+
+    .header-menu {
+      max-width: 1000px;
+      display: flex;
+      padding: 0 1.5rem;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto; 
+    }
+
+
+    .logo {
+      margin: 0.5rem;
+      font-weight: bold;
+      font-size: 2.5rem;
+      color: #473469;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
     ul {
       list-style: none;
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
-      margin: 5rem;
+
     }
 
-    li a {
+    a {
       text-decoration: none;
-      text-transform: uppercase;
-      background: rgb(232, 228, 228);
-      padding: 0.5rem 1rem;
-      color: rgb(21, 21, 21);
+      background: #4c5e914d;
+      padding: 0.25rem 0.5rem;
+      color: #473469;
       border-radius: 5px;
+      font-size: 1.125rem;
     }
 
-    @media (max-with:1190px) {
-      a {
-       margin-top: 5rem;
-      }
+    a:hover {
+      background: #4c5e91;
+      color: white;
+      transition: 0.3s;
     }
+
+
+    @media (max-width: 960px) {
+      ul {
+        display: none; 
+      }
+      .logo {
+        margin: 0 auto;
+        
+      }
+
+    }
+
+    input {
+      background: rgba(255, 255, 255, 0.434);
+      border-radius: 5px;
+      
+    }
+
+    
+ 
   </style>
 
 </head>
+
 <body>
   <header>
-    <img src="img/logo.png" alt="">
+    <input type="text">
+   <div class="header-menu">
+    <h1 class="logo">G <br> H</h1>
     <nav>
       <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">contato</a></li>
-        <li><a href="#">história</a></li>
-        <li><a href="#">midia</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">História</a></li>
+        <li><a href="#">Midia</a></li>
       </ul>
     </nav>
+  </div>
   </header>
 
   <main>
-    
+
   </main>
 </body>
+
 </html>
