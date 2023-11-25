@@ -1,3 +1,9 @@
+:root {
+    --body-color: hotpink;
+    --menu-background: #fb5;
+    --pane-padding: 5px 42px;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -24,7 +30,7 @@ body {
   grid-column: 3 / 5; /*para que o menu pegue da linha 3 a linha 5(a última linha)*/
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background: #fb5;
+  background: var(--menu-background);
 }
 
 .menu ul {
