@@ -37,6 +37,8 @@ btnPrev.addEventListener("click", PrevSlide);
 
 setInterval(nextSlide, 5000);
 
+
+
 // function pegarBotaoClicado(s, e) {
 //   let send = s;
 //   let event = e;
