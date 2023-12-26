@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto 1</title>
+  <script defer> document.documentElement.className += ' js'</script>
   <link rel="stylesheet" href="projeto1.css">
-  <script src="caderno-js.js" defer></script>
+  <script src="projeto1.js" defer></script>
   <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/playfair-display-sc" rel="stylesheet">
                 
@@ -16,13 +17,13 @@
     <li><a href="#animais">Animais</a></li> 
     <li><a href="#faq">Faq</a></li>
     <li><a href="#contato">Contato</a></li>
-    <li><a href="">Dev →</a></li>
+    <li><a href="https://www.google.com/travel/flights" target="_blank">Dev →</a></li>
   </ul>
     <!-- Usa o # pois é link interno -->
   </nav>
-  <section class="grid-section animais" id="animais">
+  <section class="grid-section animais js-scroll" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista">
+    <ul class="animais-lista js-tabMenu" >
       <li>
         <img src="../Origamid/img/imagem1.jpg" alt="">
       </li>
@@ -42,7 +43,7 @@
         <img src="../Origamid/img/imagem6.jpg" alt="">
       </li>
     </ul>
-    <div class="animais-descricao">
+    <div class="animais-descricao js-tabContain">
       <section>
         <h2>Raposa</h2>
         <p>Raposas são pequenos a médios mamíferos onívoros pertencentes a vários gêneros da família Canidae. As raposas têm o crânio achatado, orelhas triangulares verticais, focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.
@@ -79,7 +80,7 @@
         
         Ainda segundo Cunha,[4] o termo símio, que também designa os macacos (tendo sido registrado no português dos séculos XVI e XVII), vem do latim simius, de simus, "que tem o nariz chato".</p>
       </section>
-    <section>
+    <section >
       <h2>Leão</h2>
       <p>O leão, [feminino: leoa] (nome científico: Panthera leo) é uma espécie de mamífero carnívoro do gênero Panthera e da família Felidae. A espécie é atualmente encontrada na África subsaariana e na Ásia, com uma única população remanescente em perigo, no Parque Nacional da Floresta de Gir, Gujarat, Índia. Foi extinto na África do Norte e no Sudoeste Asiático em tempos históricos, e até o Pleistoceno Superior, há cerca de 10 000 anos, era o mais difundido grande mamífero terrestre depois dos humanos, sendo encontrado na maior parte da África, em muito da Eurásia, da Europa Ocidental à Índia, e na América, do Yukon ao México. É uma dos quatro grandes felinos, com alguns machos excedendo 250 quilogramas em peso, sendo o segundo maior felino recente depois do tigre.
 
@@ -89,9 +90,9 @@
     </section>
   </div>
   </section>
-  <section class="grid-section faq" id="faq">
+  <section class="grid-section faq js-scroll" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista"> <!--Lista Definida-->
+    <dl class="faq-lista js-accordion" > <!--Lista Definida-->
       <dt>Quanto é o tempo de gestação de uma <strong>Leoa</strong>?</dt> <!--Usa pra fazer uma pergunta-->
       <dd>A <strong>Leoa</strong> tem o período gestacional de 110 dias.</dd> <!--A descrição do <dt>,só pode ser usada como filho do <dl>-->
         <dt>Qual é o Felino mais rápido do mundo?</dt>
@@ -102,7 +103,7 @@
         <dd>Por isso o Mateus, que tem 9 anos e mora em Martinho Campos (MG), deve ter ficado curioso para saber qual o maior pássaro do mundo! Se você pensou que é o avestruz, acertou: um <strong>Avestruz</strong> macho pode medir 2 metros e 70 centímetros!</dd>
     </dl>
   </section>
-  <section class="grid-section contato" id="contato">
+  <section class="grid-section contato js-scroll" id="contato">
     <h1>Contato</h1>
     <div class="mapa">
       <img src="img/mapa.png" alt="Mapa">
